@@ -1245,3 +1245,14 @@ section .container {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
+
+
+.navbar a.no-underline:before {
+  visibility: hidden;
+  width: 0;
+}
+
+.navbar a.no-underline:hover:before {
+  visibility: hidden;
+  width: 0;
+}

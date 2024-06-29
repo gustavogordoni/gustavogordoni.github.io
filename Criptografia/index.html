@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -17,7 +17,7 @@
 
 </head>
 
-<body>
+<body id="vantajs" style="height: 100vh; width: 100vw;">
 
     <div class="container">
         <h1 class="text-center">Criptografia e Descriptografia</h1>
@@ -32,7 +32,7 @@
                 </div>
                 <div class="d-flex justify-content-center mt-3">
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-outline-secondary rounded-pill" data-bs-toggle="modal"
+                    <button type="button" class="btn btn-outline-light rounded-pill d-flex align-items-center" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-gear" viewBox="0 0 16 16">
@@ -178,6 +178,24 @@
 
     <!-- Template Main JS File -->
     <script src="../assets/js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r95/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.16/vanta.net.min.js"></script>
+    <script src="three.r134.min.js"></script>
+    <script src="vanta.net.min.js"></script>
+    <script>
+        VANTA.NET({
+            el: "#vantajs",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            backgroundColor: "#212529"
+        })
+    </script>
 </body>
 
 </html>
