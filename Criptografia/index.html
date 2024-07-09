@@ -85,8 +85,8 @@
         initializeMaps();
 
         function initializeMaps() {
-            const original = 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;:",.<>/?çãõáéí ';
-            const encrypted = '1õq9!fe3%l>}(]zk7ía_á n#?.6i|jm[x*ç5g2w+;y$8é@"o&c-4bhvd{)ãu:</p0ts,r^=';
+        const original = 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;:",.<>/?çãõáéíABCDEFGHIJKLMNOPQRSTUVWXYZÇÃÕÁÉÍ ';
+            const encrypted = 'eFj8t|ÉlÕ%9.v$ZwdK+M*1]_2Q=L-U>qI}uofHg@70BÍYõz#ãGm3ç? 6^(AWh"pyséT5!<ai,4&bcCOSxVXNEáÁJkDn)/RÇír;:P{[Ã';
             for (let i = 0; i < original.length; i++) {
                 encryptionMap[original[i]] = encrypted[i];
                 decryptionMap[encrypted[i]] = original[i];
